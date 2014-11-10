@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michael Prude</title>
+  <script>
+    function captionMaker() {
+    document.getElementById("caption").innerHTML =
+    "Look, a monkey!";
+    }
+    function emailMaker() {
+    document.getElementById("email").innerHTML =
+    "michaelprude@gmail.com";
+    }
+    function phoneMaker() {
+    document.getElementById("phone").innerHTML =
+    "(404)273-5627";
+    }
+  </script>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<header id="top">
+    <br />
+		<h1>Michael Prude</h1>
+    <br /> 
+		<img onclick="captionMaker()" class="head" src="http://i.imgur.com/f84vta4.jpg"/>
+    <p class="caption", id="caption"></p>
+    <ul>
+      <li><a href="#ab">About Me</a></li>
+      <li><a href="#mp">Pictures</a></li>
+      <li><a href="#con">Contact</a></li>
+    </ul>
+	</header>
+
+	<div id="ab" class="about">
+  		<h2><a>Bio</a></h2>
+      <p class="textblock"> With a background in operations and management and an ever-growing passion for programming, I like to examine systems, identify the weak points, and find creative ways to make things work better. <br /><br /> I was raised in Atlanta, schooled in Southern California, fell in love in Seattle, and now live in New York. <br /><br /> When I'm not spending my free time honing my coding skills, I like to play music, ride bikes, and solve puzzles.</p>
+      <footer><a href="#top">top</a></footer>
+  </div>
+
+  <div id="mp" class="pics">
+  	<h2><a>What I Look Like</a></h2>
+    <a href="https://www.google.com/maps/place/47%C2%B041%2732.5%22N+122%C2%B024%2716.1%22W/@47.6923555,-122.404477,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0"><img class="left" src="http://i.imgur.com/Wm4yb6x.jpg"/></a>
+    <a href="http://www.parquecondor.org/"><img class="mid" src="http://i.imgur.com/ht8WSEH.jpg?1"/></a>
+    <a href="http://www.nps.gov/mora/index.htm"><img class="right" src="http://i.imgur.com/HuZWS5g.jpg"/></a>
+    <footer><a href="#top">top</a></footer>
+  </div>
+
+  <div id="con" class="contact">
+  	<h2>Get in Touch!</h2>
+    <img class="con" onclick="emailMaker()" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/1280px-New_Logo_Gmail.svg.png"/>
+    <p class="info" id="email"></p>
+    <img class="con" onclick="phoneMaker()" src="https://cdn3.iconfinder.com/data/icons/communication-1/100/old_phone_numbers-512.png"/>
+    <p class="info" id="phone"></p>
+    <a href="http://lnkd.in/dKAVKr4"><img class="con" src="http://ostrowesq.com/wp-content/uploads/2010/11/linkedin-icon-150x150.png"/></a>
+    <footer><a href="#top">top</a></footer>
+  </div>
+  
+</body>
+</html>
