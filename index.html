@@ -5,10 +5,26 @@
   <title>Michael Prude</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="resizer()">
   <div class="text">
     <h1>This site is under construction.</h1>
     <h3>In the meantime, check out what I'm <a href="https://github.com/mjprude/">up to</a>,<br> and what I've <a href="https://www.linkedin.com/in/michaelprude">done.</a></h3>
   </div>
+
+  <script>
+  var docBody = document.getElementsByTagName('body')[0];
+  window.addEventListener('resize', resizer)
+  function resizer(){ 
+    var width = window.innerWidth;
+    if (width < 960 && width > 760) {
+      console.log(960-width + 'px')
+      docBody.style.backgroundPositionY=960-width + 'px';
+    } else if (width > 960) {
+      docBody.style.backgroundPositionY=0+ 'px';
+    } else {
+      docBody.style.backgroundPositionY='200px';
+    }
+  }
+ </script>
 </body>
 </html>
