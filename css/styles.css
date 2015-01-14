@@ -1,0 +1,151 @@
+body {
+  font-family:"Source Code Pro", Arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+#container {
+  background-image: url(../images/dark_geometric.png);
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+div.center-item {
+  position: fixed;
+  width: 500px;
+  margin-left: -250px;
+  left: 50%;
+}
+
+#name {
+  /*height: 5em;*/
+  top: 150px;
+}
+
+#name h1 {
+  font-size: 4em;
+  font-weight:200;
+  letter-spacing: -3pt;
+  -webkit-font-smoothing:antialiased;
+}
+
+#profession {
+  position: absolute;
+}
+
+#profession h3 {
+  font-weight: 200;
+}
+
+#main {
+  background-color: white;
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 150%;
+}
+
+#headers {
+  padding-top: 50px;
+}
+#headers h3 {
+  display: inline;
+  padding: 0 50px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#headers h3:nth-child(2) {
+  font-weight: bold;
+}
+
+#about {
+  width: 375px;
+  margin: 70px auto;
+  display: none;
+}
+#about p{
+  text-align: justify;
+}
+
+#mari-link {
+  color: #1225ae;
+  cursor: pointer;
+}
+
+#mari {
+  display: none;
+}
+
+.columns {
+ -moz-column-count: 3;
+ -moz-column-gap: 5px;
+ -webkit-column-count: 3;
+ -webkit-column-gap: 5px;
+}
+
+.columns p {
+  margin-top: 125px;
+}
+
+.project {
+  display: inline-block;
+  width: 300px;
+  margin: 40px 20px 0 20px;
+}
+
+.project img {
+  opacity: .7;
+}
+
+.project img:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  margin: 70px auto;
+  display: none;
+}
+
+#contact h2 {
+  font-weight: 400;
+  -webkit-font-smoothing:antialiased;
+}
+
+#profiles img {
+  margin: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
