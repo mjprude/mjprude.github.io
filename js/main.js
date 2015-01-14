@@ -55,13 +55,13 @@ $(function() {
     $('#mari-link').on('click', function() {
       $('#headshot').fadeOut()
                     .promise()
-                    .done(function() {
+                    .done(function() {       
                       winWidth = $(window).width();
                       $('#mari').fadeIn();
                       if (winWidth > 800) {
                         $('#about').addClass('columns').css('width', '90%');
                       }
-                    });
+      });
     });
 
   });
