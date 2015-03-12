@@ -12,13 +12,14 @@ body {
   margin: 0;
   top: 0;
   left: 0;
+  border: 0;
 }
 
 div.center-item {
-  position: fixed;
-  width: 500px;
-  margin-left: -250px;
+  width: 100%;
+  margin-left: -50%;
   left: 50%;
+  position: fixed;
 }
 
 #name {
@@ -83,6 +84,8 @@ div.center-item {
 }
 #about p{
   text-align: justify;
+  width: 95%;
+  margin: 0 auto;
 }
 
 #mari-link {

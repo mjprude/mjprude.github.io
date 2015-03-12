@@ -3,11 +3,14 @@ var winWidth = $(window).width();
 var scrollPos = 0;
 var $name;
 var $profession;
+var nameHeight;
+var nameTop = 150;
 
 $(function() {
   $name = $('#name')
   var namePos = $name.offset();
-  $profession = $('#profession')
+  $profession = $('#profession');
+  nameHeight = parseInt($name.css('height').replace(/\D+/, ''));
   $profession.offset({top: winHeight-35})
 
   var profPos = $profession.offset();
@@ -18,6 +21,7 @@ $(function() {
     profPos = $profession.offset();
     namePos = $name.offset();
     scrollPos = $(window).scrollTop();
+    nameHeight = parseInt($name.css('height').replace(/\D+/, ''));
   });
 
   $(window).on('scroll', function scroller() {
@@ -25,17 +29,19 @@ $(function() {
     profPos = $profession.offset();
     namePos = $name.offset();
     console.log('scrollPos: ' + scrollPos);
-    console.log('profPos:', profPos)
+    console.log('profPos:', profPos);
+    var offset = nameHeight + nameTop - 60;
+    // var offset = 250;
 
-    if (profPos.top - scrollPos <  250 && $name.css('position') === 'fixed') {
+    if (profPos.top - scrollPos < offset && $name.css('position') === 'fixed') {
       $name.css({
         position: 'relative',
         top: winHeight - 135
       })
-    } else if (profPos.top - scrollPos >  250 && $name.css('position') === 'relative') {
+    } else if (profPos.top - scrollPos > offset && $name.css('position') === 'relative') {
       $name.css({
         position: 'fixed',
-        top: 150
+        top: nameTop
       })
     }
 
